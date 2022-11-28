@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.23)
+project(hh_test_reverse C)
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/hh.txt DESTINATION ${PROJECT_BINARY_DIR})
+add_executable(${PROJECT_NAME} main.c hello.h)
+set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE C)
